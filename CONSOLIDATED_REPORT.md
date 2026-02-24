@@ -36,7 +36,7 @@ This report consolidates results from `analyze_importer_landscape.ipynb`, the pa
 
 
 **Appendix**
-- Files saved in this workspace/repo: `analyze_importer_landscape.ipynb`, `exam1.ipynb`, `importer_normalized_data.csv`, `main.csv.gzip`, `ports.csv`, `brief.pdf`, `report_importer_landscape.pptx`, and this `CONSOLIDATED_REPORT.md`.
+- Files saved in this workspace/repo: `analyze_importer_landscape.ipynb`, `importer_normalized_data.csv`, `main.csv.gzip`, `ports.csv`, `brief.pdf`, `report_importer_landscape.pptx`, and this `CONSOLIDATED_REPORT.md`.
 - Segment 2 scoring details (exact table mapping) are recorded in the notebook and can be exported as a Python function or Excel formula upon request.
 - Public sources referenced as surrogates: ImportYeti (public views), ImportGenius (public snippets), TradeMo/ImportInfo.
 
@@ -44,7 +44,7 @@ This report consolidates results from `analyze_importer_landscape.ipynb`, the pa
 
 **Segment Definitions & Visual Context**
 
-- **Segment definitions (exact rules used in `exam1.ipynb`):**
+- **Segment definitions (exact rules used in `analyze_importer_landscape.ipynb`):**
   - **Segment 1 — High-volume / Low-diversification:** total TEU >= 200 AND top‑2 country share >= 80% (i.e., >=80% TEU sourced from 1–2 countries).
   - **Segment 2 — High-volume / High-diversification:** total TEU >= 200 AND top‑2 country share < 80% (i.e., diversified across 3+ countries to reach 80% of TEU).
   - **Segment 3 — Low-volume / Low-diversification:** total TEU < 200 AND top‑2 country share >= 80% (concentrated small importers).
@@ -75,8 +75,8 @@ This report consolidates results from `analyze_importer_landscape.ipynb`, the pa
   - Reported performance (notebook): Test ROC AUC ≈ 0.95; Test PR AUC ≈ 0.867; Segment 1 precision ≈ 0.73, recall ≈ 0.79 at 0.5 threshold — good discrimination under class imbalance.
   - The notebook distills LightGBM teachers into monotonic linear mimics (signed linear weights) to produce interpretable weighted scorers for Segment 1, Segment 2, and Segment upgrade paths.
 
-- **How this maps to the consolidated analysis:**
-  - The Segment rules above were used when labeling companies and when computing the Segment 2 Upgrade Score described earlier. Visual diagnostics listed above are available in `exam1.ipynb` and can be exported as PNGs for inclusion in slide decks or the final PDF report.
+  - **How this maps to the consolidated analysis:**
+  - The Segment rules above were used when labeling companies and when computing the Segment 2 Upgrade Score described earlier. Visual diagnostics listed above are available in `analyze_importer_landscape.ipynb` and can be exported as PNGs for inclusion in slide decks or the final PDF report.
 
 
 
@@ -85,7 +85,7 @@ This report consolidates results from `analyze_importer_landscape.ipynb`, the pa
 
 **Notebook Figures**
 
-The following figures were generated from `exam1.ipynb` and saved into the `figs/` folder.
+The following figures were generated from `analyze_importer_landscape.ipynb` and saved into the `figs/` folder.
 - Figure 1: [figs/figure_01.png](figs/figure_01.png)
 - Figure 2: [figs/figure_02.png](figs/figure_02.png)
 - Figure 3: [figs/figure_03.png](figs/figure_03.png)

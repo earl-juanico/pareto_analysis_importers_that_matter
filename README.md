@@ -3,7 +3,7 @@
 This repository contains the importer-landscape analysis used to identify and validate mid-tier importers that are scaling up through increased volume and geographic diversification.
 
 Key contents
-- `analyze_importer_landscape.ipynb`, `exam1.ipynb`: interactive notebooks implementing data cleaning, segmentation, visual diagnostics, and predictive models.
+- `analyze_importer_landscape.ipynb`: interactive notebook implementing data cleaning, segmentation, visual diagnostics, and predictive models.
 - `importer_normalized_data.csv`, `ports.csv`, `main.csv.gzip`: datasets used for the analysis (large raw CSV stored with Git LFS as `main.csv.gzip`).
 - `CONSOLIDATED_REPORT.md`: consolidated narrative of findings and segment definitions.
 - `figs/`: extracted figures from the notebook (PNG).
@@ -165,7 +165,7 @@ Why this matters
 - The model's strong ranking performance (ROC AUC ≈ 0.95) and class‑imbalance robustness (PR AUC ≈ 0.87) mean that a short, actionable Top‑K list (e.g., Top‑50 candidates) can be produced early in the year to target monitoring, outreach, or due diligence for potential upgrade/scale opportunities.
 
 Reproducibility notes
-- Figures in `figs/` were extracted from `exam1.ipynb` and are embedded or linked in `CONSOLIDATED_REPORT.md`.
+- Figures in `figs/` were extracted from `analyze_importer_landscape.ipynb` and are embedded or linked in `CONSOLIDATED_REPORT.md`.
 - Large raw exports should be kept outside the repo; use Git LFS (already configured) if you must store compressed paid‑DB exports.
 
 Next steps
