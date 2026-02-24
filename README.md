@@ -27,7 +27,7 @@ Short label to use in presentations: "UPM Raflatac — High‑volume, diversifie
 
 Also notable
 -----------
-Two additional high-confidence predictions to highlight are **Space Exploration Technologies (SpaceX)** and **Pacific American Fish Company**. Both show the combined feature profile—elevated normalized TEU and a diversified country‑of‑origin footprint—that the distilled LightGBM scorer weights heavily. These companies are strong secondary priorities for validation and monitoring.
+Two additional high-confidence predictions to highlight are **Space Exploration Technologies (SpaceX)** and **Pacific American Fish Company (PAFCO)**. Both show the combined feature profile—elevated normalized TEU and a diversified country‑of‑origin footprint—that the distilled LightGBM scorer weights heavily. These companies are strong secondary priorities for validation and monitoring.
 
 
 🧪 SIMULATED BACK-TEST
@@ -137,6 +137,7 @@ Predicted Segment 2 (Score ≥ 0.55) — 16 companies:
 - Tesa Tape Inc
 - Tablecraft Products Company Inc
 - Pacific American Fish Company Inc
+ - Pacific American Fish Company Inc (PAFCO)
 - Tradin Organics USA LLC
 - Arrow Electronics
 - Eastman Chemical Company
