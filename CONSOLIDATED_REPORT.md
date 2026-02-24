@@ -33,25 +33,14 @@ This report consolidates results from `analyze_importer_landscape.ipynb`, the pa
 **Corroboration via public databases**
 - Where free surrogates were available we used ImportYeti/ImportGenius public pages and other trade-summary pages to validate shipment counts and supplier-country breadth. For audit-level confirmation (TEU/year and 1:1 country counts) the recommended data sources are ImportGenius (paid exports), Panjiva (S&P), or Descartes Datamyne.
 
-**Recommendations & next steps**
-1. For audit-quality backtest results, export the following from ImportGenius/Panjiva/Datamyne for each target company:
-   - TEU-equivalent by year (2021, 2022, 2023, 2024)
-   - Distinct supplier origin countries by year
-   - Supplier concentration (largest supplier %)
-   - Ports and quarterly counts
-2. Run the Segment 2 scoring script (I can provide a Python/Excel template) and produce a ranked upgrade list with evidence links and screenshots.
-3. For large datasets, use Git LFS (already configured in the workspace) for storage and keep the repo limited to analysis artifacts, not raw paid-DB exports.
+
 
 **Appendix**
 - Files saved in this workspace/repo: `analyze_importer_landscape.ipynb`, `exam1.ipynb`, `importer_normalized_data.csv`, `main.csv.gzip`, `ports.csv`, `brief.pdf`, `report_importer_landscape.pptx`, and this `CONSOLIDATED_REPORT.md`.
 - Segment 2 scoring details (exact table mapping) are recorded in the notebook and can be exported as a Python function or Excel formula upon request.
 - Public sources referenced as surrogates: ImportYeti (public views), ImportGenius (public snippets), TradeMo/ImportInfo.
 
-If you’d like, I will now:
-- (A) produce a ready-to-run Python script that consumes a CSV export (from ImportGenius/Panjiva/Datamyne) and computes the Segment 2 Upgrade Score for all companies and writes a ranked CSV and short PDF report; or
-- (B) request that you attach the paid-export CSVs and I will run the scoring and produce the final consolidated PDF report with per-company evidence links.
 
-Select A or B and I will proceed.
 
 **Segment Definitions & Visual Context**
 
@@ -89,7 +78,7 @@ Select A or B and I will proceed.
 - **How this maps to the consolidated analysis:**
   - The Segment rules above were used when labeling companies and when computing the Segment 2 Upgrade Score described earlier. Visual diagnostics listed above are available in `exam1.ipynb` and can be exported as PNGs for inclusion in slide decks or the final PDF report.
 
-If you want, I can (1) extract and save the key figures from `exam1.ipynb` as PNG files into the repo, and (2) commit & push the updated `CONSOLIDATED_REPORT.md` plus any exported figures. Which would you like me to do next? (Options: export figures; commit & push now; both.)
+
 
 ---
 
