@@ -11,6 +11,18 @@ Key contents
 Main insight
 - Importer scale‑up is strongly associated with both increased TEU (volume) and greater supplier‑country diversification. The LightGBM early‑warning model (trained on H1 signals) reliably ranks importers by year‑end Segment 1 risk (high‑volume, concentrated importers) and surfaces upgrade candidates (Segment 3/4 → 2/1) when combined with diversification metrics.
 
+Spotlight — Most Compelling Upgrade Prediction
+------------------------------------------------
+UPM Raflatac emerges as the single most compelling upgrade prediction in the simulated back‑test and model outputs. The narrative below summarizes why this case stands out and why it should be prioritized for validation or engagement:
+
+- Why it stands out: the model scores UPM Raflatac highly for the Segment 2 upgrade proxy because it combines a high normalized TEU (volume) with multi‑country sourcing sufficient to reach the 80% cumulative TEU threshold across several origins—i.e., the importer is both large and demonstrably diversified.
+- Supporting signals from the notebook: high normalized TEU, a low top‑2 country share, above‑median country entropy, and low month‑to‑month TEU volatility — exactly the feature profile the LightGBM teacher weights most heavily (early TEU, top‑2 share, entropy, volatility).
+- Backtest relevance: in the simulated back‑test the model produced high precision and recall for upgrade detection (Precision ≈ 87.5%, Recall ≈ 93.3%), indicating that candidates like UPM Raflatac are unlikely false positives under the scoring rule used.
+- What to do next: prioritize an audit of UPM Raflatac using paid TEU exports (Panjiva/ImportGenius/Datamyne) to compute year‑level TEU and distinct supplier‑country counts; confirm the scoring inputs and, if validated, add UPM Raflatac to an outreach or monitoring list.
+
+Short label to use in presentations: "UPM Raflatac — High‑volume, diversified mid‑tier upgrade candidate (Top priority)"
+
+
 🧪 SIMULATED BACK-TEST
 
 Step 1 — Define Baseline Features (2021)
