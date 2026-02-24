@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Execute `exam1.ipynb`, extract PNG outputs from executed cells, save them to `figs/`,
+Execute `analyze_importer_landscape.ipynb`, extract PNG outputs from executed cells, save them to `figs/`,
 and append a markdown section with image links to CONSOLIDATED_REPORT.md.
 
 Notes:
@@ -23,7 +23,7 @@ except Exception as e:
     raise
 
 ROOT = Path(__file__).resolve().parent
-NB_PATH = ROOT / "exam1.ipynb"
+NB_PATH = ROOT / "analyze_importer_landscape.ipynb"
 REPORT = ROOT / "CONSOLIDATED_REPORT.md"
 FIGS_DIR = ROOT / "figs"
 FIGS_DIR.mkdir(exist_ok=True)
@@ -57,7 +57,7 @@ except Exception as e:
     # proceed to attempt to extract any images produced before the error
 
 img_count = 0
-md_lines = ["\n**Notebook Figures**\n\nThe following figures were generated from `exam1.ipynb` and saved into the `figs/` folder.\n"]
+md_lines = ["\n**Notebook Figures**\n\nThe following figures were generated from `analyze_importer_landscape.ipynb` and saved into the `figs/` folder.\n"]
 for i, cell in enumerate(nb.cells, start=1):
     outputs = cell.get('outputs', []) if isinstance(cell, dict) else []
     for out in outputs:
