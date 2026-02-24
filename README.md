@@ -11,6 +11,9 @@ Key contents
 Main insight
 - Importer scale‑up is strongly associated with both increased TEU (volume) and greater supplier‑country diversification. The LightGBM early‑warning model (trained on H1 signals) reliably ranks importers by year‑end Segment 1 risk (high‑volume, concentrated importers) and surfaces upgrade candidates (Segment 3/4 → 2/1) when combined with diversification metrics.
 
+Modeling note
+- The prediction models were built using only 2021 data (H1 features for early warning). We trained LightGBM "teacher" models on 2021 signals and distilled them into monotonic linear mimics to produce simple, interpretable linear scorers for Segment 2 upgrade prediction.
+
 Spotlight — Most Compelling Upgrade Prediction
 ------------------------------------------------
 UPM Raflatac emerges as the single most compelling upgrade prediction in the simulated back‑test and model outputs. The narrative below summarizes why this case stands out and why it should be prioritized for validation or engagement:
@@ -21,6 +24,10 @@ UPM Raflatac emerges as the single most compelling upgrade prediction in the sim
 - What to do next: prioritize an audit of UPM Raflatac using paid TEU exports (Panjiva/ImportGenius/Datamyne) to compute year‑level TEU and distinct supplier‑country counts; confirm the scoring inputs and, if validated, add UPM Raflatac to an outreach or monitoring list.
 
 Short label to use in presentations: "UPM Raflatac — High‑volume, diversified mid‑tier upgrade candidate (Top priority)"
+
+Also notable
+-----------
+Two additional high-confidence predictions to highlight are **Space Exploration Technologies (SpaceX)** and **Pacific American Fish Company**. Both show the combined feature profile—elevated normalized TEU and a diversified country‑of‑origin footprint—that the distilled LightGBM scorer weights heavily. These companies are strong secondary priorities for validation and monitoring.
 
 
 🧪 SIMULATED BACK-TEST
